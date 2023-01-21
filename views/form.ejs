@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./head'); %>
+<body>
+    <div class="home-wrapper">
+        <h1>Image Processor</h1>
+        <p>
+            Resizes an image to multiple sizes and converts it to a
+            <a href="https://en.wikipedia.org/wiki/WebP">webp</a> format.
+        </p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" placeholder="Select image from your computer" />
+            <button type="submit">Upload Image</button>
+        </form>
+    </div>
+</body>
+</html>

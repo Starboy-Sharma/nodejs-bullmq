@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./head.ejs') %>
+<body>
+    <div class="gallery-wrapper">
+        <% if (imgFiles.length > 0) { %>
+        <p> The following are the processed images: </p>
+        <ul>
+            <% for (let imgFile of imgFiles) { %>
+                <li>
+                    <img src=<%= imgFile %>  />
+                </li>
+            <% } %> 
+        </ul>
+        <% } else { %> 
+        <p>
+            The image is being processed. Refresh after a few seconds to view the
+            resized images.
+        </p>
+        <% } %> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a:link,
+a:visited {
+    color: #00bcd4;
+}
+
+/** Styles for the "Choose File"  button **/
+button[type="submit"] {
+    background: none;
+    border: 1px solid orange;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+button[type="submit"]:hover {
+    background: orange;
+}
+
+/** Styles for the "Upload Image"  button **/
+input[type="file"]::file-selector-button {
+    border: 2px solid #2196f3;
+    padding: 10px 20px;
+    border-radius: 0.2em;
+    background-color: #2196f3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.gallery-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
